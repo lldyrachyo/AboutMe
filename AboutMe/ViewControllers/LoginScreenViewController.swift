@@ -13,11 +13,7 @@ class LoginScreenViewController: UIViewController {
     
     @IBOutlet var passwordTextField: UITextField!
     
-    let userdata = LogInData(password: "Biden", username: "Joe")
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    let userdata = LogInData(password: "Biden", username: "Joe", greeting: "👋🏻")
     
     @IBAction func buttonDidPressed(_ sender: UIButton) {
         switch sender.titleLabel?.text {
@@ -26,6 +22,7 @@ class LoginScreenViewController: UIViewController {
                 performSegue(withIdentifier: "showGreeting", sender: nil)
                 } else {
                 createAnAllert(with: "Invalid Login Data", and: "Please enter valid data")
+                passwordTextField.text = ""
             }
         case "Forgot username? ":
             createAnAllert(with: "Username", and: "Username is 'Joe'")
@@ -38,6 +35,12 @@ class LoginScreenViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Allright!", style: .default))
         present(alert, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let greetingVC = segue.destination as? GreetingViewController else { return }
+        greetingVC.name = userdata.username
+        greetingVC.emoji = userdata.greeting
     }
 
 }
