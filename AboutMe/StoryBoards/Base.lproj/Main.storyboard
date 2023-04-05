@@ -22,12 +22,12 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Joe" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxk-7F-a9s">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Biden" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-hL-pur">
                                         <rect key="frame" x="0.0" y="66" width="260" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktQ-jE-gNZ">
                                         <rect key="frame" x="0.0" y="132" width="260" height="34.5"/>
@@ -72,30 +72,95 @@
                     <connections>
                         <outlet property="passwordTextField" destination="MEj-hL-pur" id="ZFj-xh-qRz"/>
                         <outlet property="usernameTextField" destination="mxk-7F-a9s" id="ETk-wN-TXG"/>
-                        <segue destination="Se5-BL-GDe" kind="presentation" identifier="showGreeting" modalPresentationStyle="fullScreen" id="XM2-ac-5gu"/>
+                        <segue destination="aFk-Ct-pFS" kind="presentation" identifier="showGreeting" id="Qw3-IZ-5kx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="21" y="4"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cYC-FP-zHb">
+        <!--Joe Biden-->
+        <scene sceneID="Za8-h3-szP">
             <objects>
-                <viewController id="Se5-BL-GDe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mg8-9d-HbZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <viewController id="i0O-DO-V16" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UO7-me-ciI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="5lx-tx-LoC"/>
+                        <viewLayoutGuide key="safeArea" id="jaU-u4-C1W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Joe Biden" image="person.fill" catalog="system" id="sbd-hM-odP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q8u-j2-S9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQ1-Xv-Pch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829" y="3"/>
+            <point key="canvasLocation" x="1667" y="330"/>
+        </scene>
+        <!--Greeting-->
+        <scene sceneID="R8v-UY-ybP">
+            <objects>
+                <viewController id="EqL-CP-OJ4" customClass="GreetingViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8E2-y2-Bwf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="P44-w5-pl9">
+                                <rect key="frame" x="16" y="70" width="288" height="178"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joe Biden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-2j-Zdx">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="70.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="59"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="d" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXg-R7-8HV">
+                                        <rect key="frame" x="0.0" y="113.5" width="288" height="64.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wCH-CT-otx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P44-w5-pl9" firstAttribute="leading" secondItem="wCH-CT-otx" secondAttribute="leading" constant="16" id="eNN-L4-bpg"/>
+                            <constraint firstItem="P44-w5-pl9" firstAttribute="top" secondItem="wCH-CT-otx" secondAttribute="top" constant="70" id="jLm-ah-od0"/>
+                            <constraint firstItem="wCH-CT-otx" firstAttribute="trailing" secondItem="P44-w5-pl9" secondAttribute="trailing" constant="16" id="sIS-MP-z0e"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Greeting" image="figure.wave" catalog="system" id="yVi-7h-yXp"/>
+                    <connections>
+                        <outlet property="EmojiLabel" destination="XXg-R7-8HV" id="ngC-tx-EKb"/>
+                        <outlet property="WelcomeLabel" destination="GEb-2j-Zdx" id="pAP-Xb-5Gl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlq-Gw-z1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="-404"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NSJ-O4-jwm">
+            <objects>
+                <tabBarController id="aFk-Ct-pFS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Avu-f4-pfl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EqL-CP-OJ4" kind="relationship" relationship="viewControllers" id="QkL-Sl-1aT"/>
+                        <segue destination="i0O-DO-V16" kind="relationship" relationship="viewControllers" id="j4i-tg-orz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ez-XG-ejp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="3"/>
         </scene>
     </scenes>
     <resources>
+        <image name="figure.wave" catalog="system" width="80" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
