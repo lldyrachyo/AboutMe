@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		18D2D02C29DDB01A0026D55A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2D02B29DDB01A0026D55A /* AppDelegate.swift */; };
 		18D2D02E29DDB01A0026D55A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2D02D29DDB01A0026D55A /* SceneDelegate.swift */; };
-		18D2D03029DDB01A0026D55A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2D02F29DDB01A0026D55A /* ViewController.swift */; };
+		18D2D03029DDB01A0026D55A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2D02F29DDB01A0026D55A /* LoginScreenViewController.swift */; };
 		18D2D03329DDB01A0026D55A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D2D03129DDB01A0026D55A /* Main.storyboard */; };
 		18D2D03529DDB01B0026D55A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D2D03429DDB01B0026D55A /* Assets.xcassets */; };
 		18D2D03829DDB01B0026D55A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D2D03629DDB01B0026D55A /* LaunchScreen.storyboard */; };
 		18D2D04329DDB01B0026D55A /* AboutMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2D04229DDB01B0026D55A /* AboutMeTests.swift */; };
 		18D2D04D29DDB01B0026D55A /* AboutMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2D04C29DDB01B0026D55A /* AboutMeUITests.swift */; };
 		18D2D04F29DDB01B0026D55A /* AboutMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2D04E29DDB01B0026D55A /* AboutMeUITestsLaunchTests.swift */; };
+		18D2D06129DDC82B0026D55A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D2D06029DDC82B0026D55A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		18D2D02829DDB01A0026D55A /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D2D02B29DDB01A0026D55A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D2D02D29DDB01A0026D55A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18D2D02F29DDB01A0026D55A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18D2D02F29DDB01A0026D55A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		18D2D03229DDB01A0026D55A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D2D03429DDB01B0026D55A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D2D03729DDB01B0026D55A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		18D2D04829DDB01B0026D55A /* AboutMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboutMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D2D04C29DDB01B0026D55A /* AboutMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeUITests.swift; sourceTree = "<group>"; };
 		18D2D04E29DDB01B0026D55A /* AboutMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18D2D06029DDC82B0026D55A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		18D2D02A29DDB01A0026D55A /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
+				18D2D05F29DDC8160026D55A /* Model */,
 				18D2D05C29DDC00B0026D55A /* App */,
 				18D2D05D29DDC01E0026D55A /* ViewControllers */,
 				18D2D05B29DDBFE20026D55A /* StoryBoards */,
@@ -146,9 +149,17 @@
 		18D2D05D29DDC01E0026D55A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				18D2D02F29DDB01A0026D55A /* ViewController.swift */,
+				18D2D02F29DDB01A0026D55A /* LoginScreenViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18D2D05F29DDC8160026D55A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18D2D06029DDC82B0026D55A /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D2D03029DDB01A0026D55A /* ViewController.swift in Sources */,
+				18D2D06129DDC82B0026D55A /* User.swift in Sources */,
+				18D2D03029DDB01A0026D55A /* LoginScreenViewController.swift in Sources */,
 				18D2D02C29DDB01A0026D55A /* AppDelegate.swift in Sources */,
 				18D2D02E29DDB01A0026D55A /* SceneDelegate.swift in Sources */,
 			);
@@ -462,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -492,7 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
