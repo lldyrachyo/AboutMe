@@ -99,13 +99,10 @@
 		18D2D02A29DDB01A0026D55A /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				18D2D02B29DDB01A0026D55A /* AppDelegate.swift */,
-				18D2D02D29DDB01A0026D55A /* SceneDelegate.swift */,
-				18D2D02F29DDB01A0026D55A /* ViewController.swift */,
-				18D2D03129DDB01A0026D55A /* Main.storyboard */,
+				18D2D05C29DDC00B0026D55A /* App */,
+				18D2D05D29DDC01E0026D55A /* ViewControllers */,
+				18D2D05B29DDBFE20026D55A /* StoryBoards */,
 				18D2D03429DDB01B0026D55A /* Assets.xcassets */,
-				18D2D03629DDB01B0026D55A /* LaunchScreen.storyboard */,
-				18D2D03929DDB01B0026D55A /* Info.plist */,
 			);
 			path = AboutMe;
 			sourceTree = "<group>";
@@ -125,6 +122,33 @@
 				18D2D04E29DDB01B0026D55A /* AboutMeUITestsLaunchTests.swift */,
 			);
 			path = AboutMeUITests;
+			sourceTree = "<group>";
+		};
+		18D2D05B29DDBFE20026D55A /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				18D2D03129DDB01A0026D55A /* Main.storyboard */,
+				18D2D03629DDB01B0026D55A /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		18D2D05C29DDC00B0026D55A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18D2D02B29DDB01A0026D55A /* AppDelegate.swift */,
+				18D2D02D29DDB01A0026D55A /* SceneDelegate.swift */,
+				18D2D03929DDB01B0026D55A /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		18D2D05D29DDC01E0026D55A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18D2D02F29DDB01A0026D55A /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,9 +475,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyrachyo.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,9 +505,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyrachyo.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
