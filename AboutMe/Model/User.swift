@@ -7,4 +7,7 @@
 struct LogInData {
     let password: String
     let username: String
+    let greeting: String
 }
+
+
